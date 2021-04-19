@@ -15,6 +15,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import com.cg.vehicleloanmanagement.entity.User;
 import com.cg.vehicleloanmanagement.exception.UserException;
+import com.cg.vehicleloanmanagement.repository.UserIDao;
 import com.cg.vehicleloanmanagement.repository.UserJpaRepository;
 import com.cg.vehicleloanmanagement.service.UserService;
 
@@ -25,7 +26,7 @@ import org.junit.Assert;
 public class UserTest {
 
 	@Mock
-	private UserJpaRepository repository;
+	private UserIDao repository;
 	
 	@InjectMocks
 	private UserService userService;
