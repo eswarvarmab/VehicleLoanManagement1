@@ -18,6 +18,7 @@ import com.cg.vehicleloanmanagement.entity.LoanApplication;
 import com.cg.vehicleloanmanagement.entity.LoanApplicationStatus;
 import com.cg.vehicleloanmanagement.entity.User;
 import com.cg.vehicleloanmanagement.repository.ApprovedLoanJPARepository;
+import com.cg.vehicleloanmanagement.repository.ApprovedLoanIDao;
 import com.cg.vehicleloanmanagement.service.ApprovedService;
 
 
@@ -25,7 +26,7 @@ import com.cg.vehicleloanmanagement.service.ApprovedService;
 public class ApprovedLoanTest {
 
 	@Mock
-	private ApprovedLoanJPARepository repos;
+	private ApprovedLoanIDao repos;
 	
 	@InjectMocks
 	private ApprovedService aservice;
