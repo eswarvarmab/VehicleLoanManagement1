@@ -13,6 +13,7 @@ import com.cg.vehicleloanmanagement.entity.LoanApplication;
 import com.cg.vehicleloanmanagement.entity.User;
 import com.cg.vehicleloanmanagement.exception.LoanApplicationException;
 import com.cg.vehicleloanmanagement.repository.LoanApplicationJPARepository;
+import com.cg.vehicleloanmanagement.repository.LoanIDao;
 import com.cg.vehicleloanmanagement.service.LoanApplicationService;
 
 import org.junit.Assert;
@@ -23,7 +24,7 @@ import org.junit.Assert;
 public class LoanApplicationTest {
 
 	@MockBean
-	private LoanApplicationJPARepository repos;
+	private LoanIDao repos;
 	
 	@Autowired
 	private LoanApplicationService loanapplicationservice;
